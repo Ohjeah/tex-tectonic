@@ -6,6 +6,7 @@ MAINTAINER info@markusqua.de
 RUN apt-get update && \
     apt-get install \
     ruby-dev \
+    ruby \
     gem \
     git \
     g++ \
