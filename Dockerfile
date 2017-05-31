@@ -2,7 +2,9 @@ FROM continuumio/miniconda3:latest
 
 MAINTAINER info@markusqua.de
 
-RUN apt-get install \
+
+RUN apt-get update && \
+    apt-get install \
     ruby-dev \
     git \
     g++ \
