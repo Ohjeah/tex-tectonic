@@ -10,8 +10,8 @@ RUN apt-get update && \
     make \
     -y
 
-RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby && \
-    source /usr/local/rvm/scripts/rvm
+RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby
+RUN /bin/bash -c "source /usr/local/rvm/scripts/rvm"
 
 RUN conda config --add channels conda-forge && \
     conda config --add channels pkgw-forge && \
