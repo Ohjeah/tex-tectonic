@@ -8,6 +8,7 @@ RUN apt-get update && \
     git \
     g++ \
     make \
+    gpg \
     -y
 
 RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby
