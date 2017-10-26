@@ -8,10 +8,9 @@ RUN apt-get update && \
     git \
     g++ \
     make \
-    gpg \
     -y
 
-RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby
+RUN curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 RUN conda config --add channels conda-forge && \
     conda config --add channels pkgw-forge && \
